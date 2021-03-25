@@ -1,0 +1,28 @@
+body{
+    padding: 50px;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+
+main{
+    padding: 40px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    margin:15px 0;
+    
+
+}
+sup{
+    font-size: 10px;
+    vertical-align :top;
+}
+.warningBox{
+    margin-top: 20px;
+    border: 1px solid steelblue;
+    border-left: 10px solid skyblue;
+    background-color: palegoldenrod;
+    margin-bottom: 20px;
+}
