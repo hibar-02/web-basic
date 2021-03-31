@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clonBugs</title>
+    <link rel="stylesheet" href="bugs.css">
+</head>
+<body>
+    <table> <!--표 삽입 태그-->
+        <caption>음원차트</caption> <!--표 제목 태그-->
+        <thead>
+            <tr>
+                <th class="check"></th>
+                <th class="albumArt"></th>
+                <th class="title">
+                    <span>곡</span>
+                </th>
+                <th class="artist">
+                    <span>아티스트</span>
+                </th>
+                <th class="album">
+                    <span>앨범</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="check">
+                    <input type="checkbox" title="휘파람" />
+                </td>
+                <td>
+                    <a href="https://music.bugs.co.kr/album/20049444?wl_ref=list_tr_07_search" class="thumbnail">
+                         <img src="https://image.bugsm.co.kr/album/images/1000/200494/20049444.jpg" alt="휘파람 썸네일" style="width: 100px; height: 100px;">
+                     </a>
+                </td>
+                <th>
+                    <p class="title">
+                        <a href="javascript:;" title="휘파람"></a>
+                    </p>
+                </th>
+                <td>
+                    <p class="artist">
+                        <a href="https://music.bugs.co.kr/artist/20022492?wl_ref=S_ab_01_02" title="블랙핑크">
+                            <mark>블랙핑크</mark>
+                        </a>
+                    </p>
+                </td>
+                <td class="left">
+                    <a href="https://music.bugs.co.kr/album/20049444?wl_ref=list_ab_01_ab" class="album" title="휘파람">휘파람
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
