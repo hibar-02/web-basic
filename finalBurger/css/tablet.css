@@ -1,0 +1,236 @@
+/*COMMON*/
+body{
+    font-family: 'Malgun Gothic';
+    font-size: 25px;
+    font-weight: 700;
+    height: 3000px;
+    background-color: #f2ebe6;
+}
+
+header>.wrapper{
+    display:flex;
+    flex-direction: column;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*HEADER*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+header .logo{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 80px;
+    margin: auto 0;
+}
+
+header .logo img{
+    width: 83;
+    height: 82;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    position: absolute;
+}
+
+header .menu{
+    position: absolute;
+    top:80px;
+    left: 200px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+header .menu .header--primary{
+    position: relative;
+    height: 55px;
+    display: flex;
+}
+
+header .menu .header--primary ul.main {
+    position: relative;
+    display:flex;
+    flex-grow: 1;
+
+}
+
+header .menu .header--primary ul.main li.item {
+    position: relative;
+    display: block;
+    width: 80%;
+    line-height: 50px;
+}
+
+header .menu .header--primary ul.main li.item .item__title {
+    padding: 24px 20px 0;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+header .menu .header--primary ul.main li.item .item__category{
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 30px;
+    display: none;
+}
+
+header .menu .header--primary ul.main li.item:hover .item__category{
+    display: block;
+}
+ header #hamburger__icon{
+     display: none;
+ }
+/* MAIN SLIDER */
+
+main .wrapper #slider {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+main .wrapper #slider .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .wrapper #slider .slide1 {
+    background-image: url(../img/slide01.png);
+}
+
+main .wrapper #slider .slide2 {
+    background-image: url(../img/slide02.png);
+}
+
+main .wrapper #slider .slide3 {
+    background-image: url(../img/slide03.png);
+}
+
+main .wrapper #slider .slide4 {
+    background-image: url(../img/slide04.png);
+}
+
+main .wrapper #slider .slide5 {
+    background-image: url(../img/slide05.png);
+}
+
+main .wrapper #slider .slide6 {
+    background-image: url(../img/slide06.png);
+}
+
+main .wrapper #slider .slide7 {
+    background-image: url(../img/slide07.png);
+}
+
+main .wrapper #slider .slide8 {
+    background-image: url(../img/slide08.png);
+}
+
+main .wrapper #slider .slide9 {
+    background-image: url(../img/slide09.png);
+}
+
+main .wrapper #slider .slide__content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper #slider .slide__content span {
+    font-size: 80px;
+    color: #F6F5F0;
+}
+
+/* SLIDER ARROW */
+
+main .wrapper #slider .material-icons {
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-top: 40px;
+    font-size: 80px;
+    color: #F6F5F0;
+}
+
+main .wrapper #slider .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+}
+
+main .wrapper #slider .arrow--left {
+    left: 0px;
+}
+
+main .wrapper #slider .arrow--right {
+    right: 0px;
+}
+
+/* SLIDER DOTS */
+
+main .wrapper #slider .dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper #slider .dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+main .wrapper #slider .dots .dot1 {
+    background:red;
+}
+
+main .YouTube {
+    display:inline-block;
+    width: 100%;
+    height: 1230px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+    
+}

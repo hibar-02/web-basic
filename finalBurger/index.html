@@ -11,9 +11,16 @@
     <link rel="icon" href="./img/favicon.png">
      <!--material-icon-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--css연결-->
-    <link rel="stylesheet" href="./css/main.css">
+    <!--desktop css연결-->
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width :960px)">
+    <!--tablet css연결-->
+    <link rel="stylesheet" href="./css/main.css" media="screen and (min-width :768px) and (max-width : 959px)">
+    <!--mobile css연결-->
+    <link rel="stylesheet" href="./css/main.css" media="screen and (max-width : 767px)">
+    <!--js연결-->
+    <script defer src="./js/main.js"></script>
 </head>
+
 <body>
     <header id="header">
         <class class="wrapper">
@@ -21,6 +28,13 @@
                 <!--로고를 클릭하면 홈으로 이동-->
                 <a href="./index.html" class="logo">
                 <img src="./img/logo_large.gif" alt="로고"></a>
+                <!--햄버거 메뉴-->
+                <!--데스크탑에서는 안보임-->
+                <div id="hamburger__icon">
+                    <span class="material-icons">
+                        menu
+                        </span>
+                </div>
                 <div class="menu">
                     <!--헤더 첫번째 섹션-->
                     <div class="header--primary">
@@ -131,9 +145,9 @@
                 <div class="dot dot9"></div>
             </div>
             </div>
-        <!--유튜브 삽입-->
-        <iframe class="YouTube" src="https://www.youtube.com/embed/ebUszzkOm9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>    
-        </div>
-    </main>
-</body>
+            <!--유튜브 삽입-->
+            <iframe class="YouTube" src="https://www.youtube.com/embed/ebUszzkOm9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>    
+            </div>
+        </main>
+    </body>
 </html>
