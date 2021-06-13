@@ -1,7 +1,7 @@
 /*COMMON*/
 body{
-    font-family: 'Malgun Gothic';
-    font-size: 25px;
+    font-family: HGG, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    font-size: 20px;
     font-weight: 700;
     height: 3000px;
     background-color: #f2ebe6;
@@ -24,18 +24,19 @@ a{
 header{
     position: fixed;
     width: 100%;
-    height: 250px;
+    height: 95px;
     background-color: white;
     display: flex;
     justify-content: space-between;
     z-index: 3;
+    font-size: 10px;
 }
 
 header .logo{
     position: absolute;
     top:0;
     bottom: 0;
-    left: 80px;
+    left: 140px;
     margin: auto 0;
 }
 
@@ -49,26 +50,29 @@ header .logo img{
 }
 
 header .menu{
-    position: absolute;
-    top:80px;
-    left: 200px;
-    width: calc(100% - 100px);
+    width: 792.408px;
+    height: 95px;
+    margin: 0 auto;
+    
     display: flex;
     flex-direction: column;
-    font-size: 40px;
     box-sizing: border-box;
+    
 }
 
 header .menu .header--primary{
     position: relative;
-    height: 55px;
+    height: 5px;
     display: flex;
+    font-size: 20px;
+    
 }
 
 header .menu .header--primary ul.main {
     position: relative;
     display:flex;
     flex-grow: 1;
+    
 
 }
 
@@ -80,18 +84,23 @@ header .menu .header--primary ul.main li.item {
 }
 
 header .menu .header--primary ul.main li.item .item__title {
-    padding: 24px 20px 0;
-    align-items: center;
-    margin: auto;
-    cursor: pointer;
-    font-size: 50px;
-    font-weight: 1000;
+    
+    width: 100%;
+    height: 75px;
+    padding-bottom: 20px; /*안쪽 여백 영역 설정*/
+    font-weight: 700;
+    font-size: 23px;
+    text-align: left;
+    line-height: 55px;
+    cursor: inherit;/*커서 모양 지정*/
 }
 
 header .menu .header--primary ul.main li.item .item__category{
     position: absolute;
     width: 100%;
-    font-size: 30px;
+    font-size: 23px;
+    text-align: left;
+    line-height: 55px;
     padding-left: 20px;
     padding-top: 30px;
     display: none;
@@ -101,136 +110,132 @@ header .menu .header--primary ul.main li.item:hover .item__category{
     display: block;
 }
  header #hamburger__icon{
-     display: none;
+    display: none;
  }
 /* MAIN SLIDER */
 
-main .wrapper #slider {
+main .inner #slider {
     width: 100%;
-    height: 60vh;
+    height: 78vh;
     overflow: hidden;
-    border-radius: 20px;
     position: relative;
 }
 
-main .wrapper #slider .slide {
+main .inner #slider .slide {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
-main .wrapper #slider .slide1 {
-    background-image: url(../img/slide01.png);
+main .inner #slider .slide1 {
+    background-image: url(../img/slider01.png);
 }
 
-main .wrapper #slider .slide2 {
-    background-image: url(../img/slide02.png);
+main .inner #slider .slide2 {
+    background-image: url(../img/slider02.png);
 }
 
-main .wrapper #slider .slide3 {
-    background-image: url(../img/slide03.png);
+main .inner #slider .slide3 {
+    background-image: url(../img/slider03.png);
 }
 
-main .wrapper #slider .slide4 {
-    background-image: url(../img/slide04.png);
+main .inner #slider .slide4 {
+    background-image: url(../img/slider04.png);
 }
 
-main .wrapper #slider .slide5 {
-    background-image: url(../img/slide05.png);
+main .inner #slider .slide5 {
+    background-image: url(../img/slider05.png);
 }
 
-main .wrapper #slider .slide6 {
-    background-image: url(../img/slide06.png);
+main .inner #slider .slide6 {
+    background-image: url(../img/slider06.png);
 }
 
-main .wrapper #slider .slide7 {
-    background-image: url(../img/slide07.png);
+main .inner #slider .slide7 {
+    background-image: url(../img/slider07.png);
 }
 
-main .wrapper #slider .slide8 {
-    background-image: url(../img/slide08.png);
-}
 
-main .wrapper #slider .slide9 {
-    background-image: url(../img/slide09.png);
-}
+/* SLIDE CONTENT*/
 
-main .wrapper #slider .slide__content {
+main .inner #slider .slide__content {
     width: 100%;
-    height: 60vh;
-    display: flex;
+    height: 78vh;
+    display:inline-block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main .wrapper #slider .slide__content span {
+main .inner #slider .slide__content span {
     font-size: 80px;
-    color: #F6F5F0;
+    color: #fff;
 }
 
 /* SLIDER ARROW */
 
-main .wrapper #slider .material-icons {
-    justify-content: center;
+main .inner #slider .arrow {
     position: absolute;
     top: 50%;
-    margin-top: 40px;
     font-size: 80px;
+    margin-top: -40px;
     color: #F6F5F0;
-}
-
-main .wrapper #slider .arrow {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    width: 0;
-    height: 0;
+     z-index: 2;
 }
 
-main .wrapper #slider .arrow--left {
+main .inner #slider .arrow--left {
     left: 0px;
 }
 
-main .wrapper #slider .arrow--right {
+main .inner #slider .arrow--right {
     right: 0px;
 }
 
 /* SLIDER DOTS */
 
-main .wrapper #slider .dots {
+main .inner #slider .dots {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 0 auto;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .wrapper #slider .dots .dot {
+main .inner #slider .dots .dot {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 5px;
     background: #fff;
-    margin: 0 10px;
+    margin: 0 3px;
     cursor: pointer;
+    transition: .4s ease;
 }
 
-main .wrapper #slider .dots .dot1 {
+main .inner #slider .dots .dot1 {
     background:red;
 }
 
 main .YouTube {
     display:inline-block;
     width: 100%;
-    height: 1230px;
+    height: 600px;
     vertical-align: middle;
 }
 
+main .sns{
+    width: 100%;
+    height: 400px;
+    vertical-align: middle;
+    background-color: #683a2f;
+}
 @media screen and (min-width: 768px) and (max-width: 959px){
     
 }

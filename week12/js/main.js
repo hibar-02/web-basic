@@ -1,12 +1,3 @@
-const textEl=document.getElementById("demo");
-
-window.addEventListener("resize", function(){
-    window.innerWidth >= 960
-    ?(textEl.innerHTML="데스크탑")
-    :window.innerWidth >=768
-    ?(textEl.innerHTML="태블릿PC")
-    :(textEl.innerHTML="스마트폰")
-})
 
 // 슬라이드 이미지들 선택자
 const $slides = document.querySelectorAll(".slide");
